@@ -92,7 +92,7 @@ const emails = [
 function App() {
   const [data, setData] = useState([...people, ...calendar, ...emails]);
   const [selection, setSelection] = useState(null);
-  const [currentOption, setCurrentOption] = useState("all");
+  //const [currentOption, setCurrentOption] = useState("all");
 
   function handleClick(e) {
     const op = e.target.name;
@@ -100,19 +100,19 @@ function App() {
     switch (op) {
       case "all":
         setData([...people, ...calendar, ...emails]);
-        setCurrentOption("all");
+        //setCurrentOption("all");
         break;
       case "people":
         setData([...people]);
-        setCurrentOption("people");
+        //setCurrentOption("people");
         break;
       case "calendar":
         setData([...calendar]);
-        setCurrentOption("calendar");
+       // setCurrentOption("calendar");
         break;
       case "emails":
         setData([...emails]);
-        setCurrentOption("emails");
+        //setCurrentOption("emails");
         break;
     
       default:
